@@ -113,9 +113,9 @@ def get_Regularition(geneA,geneB):
             m2 = m2.to_numpy().reshape(-1)
             # print(a1)
             if (m1[j] == 1):
-                M[j] = M[j] + 10
+                M[j] = M[j] + 9
             if (m2[i] == 1):
-                M[j] = M[j] + 10
+                M[j] = M[j] + 9
             for j1 in range(len(geneIDs)):
                 if (m1[j1] == 0 and m2[j1] == 0 and j1 != j and j1 != i) or (
                         m1[j1] == 1 and m2[j1] == 1 and j1 != j and j1 != i):
@@ -127,9 +127,9 @@ def get_Regularition(geneA,geneB):
             n2 = rpkm.iloc[j, :]
             n2 = n2.to_numpy().reshape(-1)
             if (n1[j] == 1):
-                N[j] = N[j] + 10
+                N[j] = N[j] + 9
             if (n2[i] == 1):
-                N[j] = N[j] + 10
+                N[j] = N[j] + 9
             for j1 in range(len(geneIDs)):
                 if (n1[j1] == 0 and n2[j1] == 0 and j1 != j and j1 != i) or (
                         n1[j1] == 1 and n2[j1] == 1 and j1 != j and j1 != i):
