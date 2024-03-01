@@ -2,7 +2,7 @@ function [DD] = Reward1(Y)
 [rows,cols]=size(Y);
 
 % REWARD MATRIX
-e=4;
+e=9;
 DD=zeros(rows,rows);
  for i = 1 : rows
      for j = 1 : rows
